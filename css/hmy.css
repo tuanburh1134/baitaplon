@@ -1,0 +1,320 @@
+
+
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://haycafe.vn/wp-content/uploads/2022/01/Hinh-nen-cong-nghe-4K.jpg);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+.header {
+    width: 100%;
+    /* background-color: #b9b6b6; */
+    display: flex;
+}
+    .header .logo{
+        width: 370px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 40px;
+    }
+.header img {
+    width: 100%;   
+}
+
+    .header .title{
+        /* background-color: aquamarine; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        color: #f0f0f0;
+        
+    }
+
+.header .title h1 {
+    margin: 25px auto;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header .title h2 {
+    /* background-color: #777; */
+    margin: 0px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+  .nav {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #555;
+    color: white;
+    padding: 10px;
+  }
+
+  .nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    transition: .3s ease;
+    /*font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+  }
+
+  .nav a:hover{
+    scale: 1.1;
+  }
+
+  .nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+    .nav a:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+  .content{
+    width: 100%;
+  }
+
+  .content .description p{
+    font-size: 22px;
+    margin: 20px 30px ;
+    color:aliceblue;
+    /*font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+  }
+
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+
+  .main .col {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+  }
+
+  .main .col img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main .col h3 {
+    margin: 0;
+    padding: 10px 0;
+    color:#fdf497;
+    /*font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+  }
+
+  .main .col p {
+    color: white;
+    line-height: 1.5;
+    /*font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+  }
+
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    /*font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+  }
+
+  .footer .about{
+    display: flex;
+    width: 100%;
+    /* background-color: grey; */
+  }
+
+  .footer .name {
+    width: 30%;
+  }
+
+  .footer .logo{
+    width: 180px;
+    margin: 15px auto;
+  }
+
+  .footer .logo img {
+    width: 100%;
+  }
+
+  .footer .name p{
+    text-align: center;
+  }
+
+  .footer .follow-us {
+    width: 15%;
+    text-align: center;
+    margin: 0 20px;
+    }
+
+  .footer .title {
+    font-size: 20px;
+    margin: 15px auto ;
+  }
+
+  .footer .icon {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+  .footer .icon i{
+    margin: 5px;
+    font-size: 25px;
+    transition: .3s ease;
+  }
+
+  .footer .icon i:hover{
+    scale: 1.35;
+  }
+
+  .footer .icon a:nth-child(1) i{
+    color: rgb(61, 127, 249);
+  }
+
+  .footer .icon a:nth-child(2) i{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            /* Also define standard property for compatibility */
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .footer .icon a:nth-child(3){
+    color: #FF0000;
+  }
+
+  .footer .contact {
+    width: 55%;
+    /* background-color: cadetblue;  */
+    margin-left: 30px;
+  }
+
+  .footer .info{
+    line-height: 30px;
+  }
+
+  .footer .contact i{
+    margin-right: 15px;
+    color: rgb(121, 196, 253);
+  }
+
+  .footer .end {
+    text-align: right;
+    margin: 10px 0 -20px ;
+  }
+  .tofixed{
+    width: 80%;
+    position: fixed;
+    top:0;
+    color: #fd5949;
+    animation: showfixed 1s ease-in-out 1 forwards;
+  }
+  @keyframes showfixed{
+    from{
+      top:-100px;
+    }
+  }
+
+@media (max-width: 690px) {
+    
+    .header .title h1{
+        font-size: 25px;
+    }
+
+    .header .title h2{
+        font-size: 20px;
+    }
+
+    .footer .about{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer .name {
+        display: flex;
+        width: 100%;
+    }
+
+    .footer .follow-us{
+        width: 120px;
+    }
+    .footer .contact{
+        width: 50%;
+    }
+    .tofixed{
+      width: 100%;
+      
+    }
+    .nav {
+      background-color: #333;
+      color: white;
+      padding: 0;
+      text-align: center;
+    }
+
+}
+
+@media (max-width: 460px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .logo{
+        width: 250px;
+    }
+    
+    .footer .name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .contact .title {
+        margin-left: 12px;
+    }
+    .tofixed{
+      width: 100%;
+    }
+    .nav {
+      background-color: #333;
+      color: white;
+      padding: 0px;
+      text-align: center;
+    }
+
+}
